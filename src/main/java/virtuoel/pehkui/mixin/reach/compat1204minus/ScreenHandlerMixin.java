@@ -16,7 +16,7 @@ public class ScreenHandlerMixin
 {
 	@Dynamic
 	@ModifyExpressionValue(method = { "method_17696", "func_216960_a", "m_38913_" }, require = 0, expect = 0, at = @At(value = "CONSTANT", args = "doubleValue=64.0D"))
-	private static double pehkui$canUse$distance(double value, Block block, PlayerEntity player)
+	private static double pehkui$canUse$distance(double value, PlayerEntity player, Block block)
 	{
 		final float scale = ScaleUtils.getBlockReachScale(player);
 		return scale > 1.0F ? scale * scale * value : value;
